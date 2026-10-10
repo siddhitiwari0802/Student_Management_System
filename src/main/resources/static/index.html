@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Management System</h1>
+
+    <!-- Students -->
+    <section>
+        <h2>Student Management</h2>
+
+        <div class="form-box">
+            <input type="text" id="studentName" placeholder="Student Name">
+            <input type="email" id="studentEmail" placeholder="Email">
+            <input type="text" id="studentCourse" placeholder="Course">
+
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+
+            <tbody id="studentTable"></tbody>
+        </table>
+    </section>
+
+
+    <!-- Courses -->
+    <section>
+        <h2>Course Management</h2>
+
+        <div class="form-box">
+            <input type="text" id="courseName" placeholder="Course Name">
+            <input type="text" id="courseCode" placeholder="Course Code">
+
+            <button onclick="addCourse()">Add Course</button>
+        </div>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Course Name</th>
+                <th>Course Code</th>
+            </tr>
+            </thead>
+
+            <tbody id="courseTable"></tbody>
+        </table>
+    </section>
+
+
+    <!-- Registration -->
+    <section>
+        <h2>Course Enrollment</h2>
+
+        <div class="form-box">
+            <input type="number" id="registrationStudentId"
+                   placeholder="Student ID">
+
+            <input type="number" id="registrationCourseId"
+                   placeholder="Course ID">
+
+            <input type="text" id="registrationSemester"
+                   placeholder="Semester">
+
+            <button onclick="addRegistration()">Enroll Student</button>
+        </div>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student ID</th>
+                <th>Course ID</th>
+                <th>Semester</th>
+            </tr>
+            </thead>
+
+            <tbody id="registrationTable"></tbody>
+        </table>
+    </section>
+
+
+    <!-- Academic Records -->
+    <section>
+        <h2>Academic Information</h2>
+
+        <div class="form-box">
+            <input type="number" id="academicStudentId"
+                   placeholder="Student ID">
+
+            <input type="text" id="academicSemester"
+                   placeholder="Semester">
+
+            <input type="number" id="academicMarks"
+                   placeholder="Marks">
+
+            <input type="text" id="academicGrade"
+                   placeholder="Grade">
+
+            <button onclick="addAcademicRecord()">
+                Add Record
+            </button>
+        </div>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student ID</th>
+                <th>Semester</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+            </thead>
+
+            <tbody id="academicTable"></tbody>
+        </table>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
